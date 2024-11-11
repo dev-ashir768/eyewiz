@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+/* ========= !universal css ========= */
+
+body {
+  scroll-behavior: smooth;
+  background-color: #000000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+::selection {
+  background-color: #DBB42C;
+  color: #fff;
+}
+
+
+/* ========= !universal css ========= */
+
+/* ========= custom scrollbar ========= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DBB42C;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  background: #f1f1f1;
+}
+
+/* ========= !custom scrollbar ========= */
