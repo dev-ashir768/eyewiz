@@ -3,6 +3,7 @@ import NextTopLoader from "nextjs-toploader";
 import { gotu, playfair } from "./fonts/fonts";
 import "./globals.css";
 import Navbar from "@/components/ui/site/global/Navbar";
+import Footer from "@/components/ui/site/global/Footer";
 
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
         <NextTopLoader easing="ease" color="#DBB42C" showSpinner={false} />
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );
