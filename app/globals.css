@@ -32,10 +32,9 @@ input[type="number"] {
 }
 
 ::selection {
-  background-color: #DBB42C;
+  background-color: #dbb42c;
   color: #fff;
 }
-
 
 /* ========= !universal css ========= */
 
@@ -46,7 +45,7 @@ input[type="number"] {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #DBB42C;
+  background: #dbb42c;
 }
 
 ::-webkit-scrollbar-track {
@@ -55,3 +54,16 @@ input[type="number"] {
 }
 
 /* ========= !custom scrollbar ========= */
+
+/* ========= animation keyframe ========= */
+
+@keyframes slide-left-carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ========= !animation keyframe ========= */
