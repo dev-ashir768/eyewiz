@@ -9,14 +9,14 @@ import Image from 'next/image';
 const Glassess = () => {
     return (
         <section id='eye-glasses' className='container pb-16' >
-            <div className="flex items-center">
-                <div className="flex-1 border-t border-[#DBB42C]"></div>
-                <div className="flex items-center text-[#DBB42C] xxl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase">
+            <div className="flex items-center justify-center">
+                <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
+                <div className="flex items-center text-[#DBB42C] xxl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase text-center">
                     <span className="mr-4 w-2 h-2 bg-[#DBB42C] rounded-full"></span>
                     wizard-approved lenses
                     <span className="ml-4 w-2 h-2 bg-[#DBB42C] rounded-full"></span>
                 </div>
-                <div className="flex-1 border-t border-[#DBB42C]"></div>
+                <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
             </div>
             <div className='pt-12'>
                 <h1 className="md:max-w-[520px] max-w-[480px] text-[#9F9F9F] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase mb-6">Mens Categories</h1>

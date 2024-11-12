@@ -57,17 +57,18 @@ const ContactForm = () => {
 
     return (
         <section className='container bg-[#10141B] py-16 bg-no-repeat bg-contain bg-bottom bg-fixed' style={{ backgroundImage: "url('/images/midNight.png')" }}>
-            <div className='xl:w-[60%] lg:w-[55%] w-full lg:pb-20'>
-                <div className='mb-8'>
-                    <div className='text-start mb-2'>
-                        <h1 className={`text-[#DBB42C] text-[43px] leading-[53px] font-bold`}>Get a Quote</h1>
-                    </div>
-                    <div className='max-w-[780px] mr-auto text-start'>
-                        <p className='text-[#9F9F9F] text-base font-normal'>Please enter information below in order to calculate the shipment.</p>
-                    </div>
+            <div className="flex items-center justify-center">
+                <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
+                <div className="flex items-center text-[#DBB42C] xxl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase">
+                    <span className="mr-4 w-2 h-2 bg-[#DBB42C] rounded-full"></span>
+                    Get in touch
+                    <span className="ml-4 w-2 h-2 bg-[#DBB42C] rounded-full"></span>
                 </div>
+                <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
+            </div>
+            <div className='xl:w-[60%] lg:w-[55%] w-full mx-auto'>
                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 pt-16">
                         <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
                             <FormField
                                 control={form.control}

@@ -4,7 +4,7 @@ import React from 'react'
 const EyeWizCarousel = () => {
     return (
         <section className='container w-full h-full bg-[#10141B]'>
-            <div className='overflow-hidden'>
+            <div className='overflow-hidden py-2'>
                 <div className='flex flex-nowrap min-w-full'>
                     {Array(3)
                         .fill(0)

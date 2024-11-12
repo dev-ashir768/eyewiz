@@ -4,14 +4,14 @@ import React from 'react'
 const PopularBrands = () => {
     return (
         <section className='container pb-16'>
-            <div className="flex items-center">
-                <div className="flex-1 border-t border-[#DBB42C]"></div>
+            <div className="flex items-center justify-center">
+                <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
                 <div className="flex items-center text-[#DBB42C] xxl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase">
                     <span className="mr-4 w-2 h-2 bg-[#DBB42C] rounded-full"></span>
                     popular brands
                     <span className="ml-4 w-2 h-2 bg-[#DBB42C] rounded-full"></span>
                 </div>
-                <div className="flex-1 border-t border-[#DBB42C]"></div>
+                <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
             </div>
             <div className='grid md:grid-cols-6 grid-cols-3 py-12 gap-3'>
                 <div className='relative h-[75PX]'>
