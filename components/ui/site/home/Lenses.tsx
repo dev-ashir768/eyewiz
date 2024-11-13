@@ -40,10 +40,10 @@ const Lenses = () => {
                 >
                     <SwiperSlide>
                         <div className='relative h-[200px]'>
-                            <Image src="/images/xcel.svg" alt="xcel" fill />
+                            <Image src="/images/varilux.png" alt="varilux" fill />
                         </div>
                         <div>
-                            <h1 className="text-center text-[#9F9F9F] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase">X-Cel</h1>
+                            <h1 className="text-center text-[#9F9F9F] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase">varilux</h1>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>

@@ -19,7 +19,7 @@ const WeOffer = () => {
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
             </div>
             <div className='pt-12'>
-                <h1 className="md:max-w-[520px] max-w-[480px] text-[#9F9F9F] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase mb-6">NHS</h1>
+                <h1 className=" text-[#9F9F9F] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase mb-6">NHS and private eye examinations</h1>
                 <Swiper
                     keyboard={{ enabled: true }}
                     spaceBetween={30}
