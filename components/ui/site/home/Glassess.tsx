@@ -7,15 +7,25 @@ import "swiper/css/pagination";
 import Image from 'next/image';
 
 const glasses = [
+    { brandName: "Screen Glasses", imgHref: "glassesEleven.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesOne.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesTwelve.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesTwo.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesThirteen.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesThree.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesFourteen.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesFour.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesFifteen.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesFive.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesSeventeen.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesSix.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesEighteeb.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesSeven.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesSixteen.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesEight.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesNineteen.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesNine.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesTwenty.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesTen.webp" },
 ]
 

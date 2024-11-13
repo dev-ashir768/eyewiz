@@ -46,9 +46,9 @@ const Footer = () => {
                                 </div>
                                 <div className='flex flex-col gap-4'>
                                     <Link href="/" className='text-[#9F9F9F] hover:text-[#fff] uppercase text-sm font-semibold'>home</Link>
-                                    <Link href="/#services" className='text-[#9F9F9F] hover:text-[#fff] uppercase text-sm font-semibold'>treatment</Link>
-                                    <Link href="#" className='text-[#9F9F9F] hover:text-[#fff] uppercase text-sm font-semibold'>about us</Link>
-                                    <Link href="/contact" className='text-[#9F9F9F] hover:text-[#fff] uppercase text-sm font-semibold'>contact us</Link>
+                                    <Link href="/#treatment" className='text-[#9F9F9F] hover:text-[#fff] uppercase text-sm font-semibold'>treatment</Link>
+                                    <Link href="/#about_us" className='text-[#9F9F9F] hover:text-[#fff] uppercase text-sm font-semibold'>about us</Link>
+                                    <Link href="/contact_us" className='text-[#9F9F9F] hover:text-[#fff] uppercase text-sm font-semibold'>contact us</Link>
                                 </div>
                             </div>
                             <div className='lg:max-w-[300px] max-w-[240px]'>
@@ -87,7 +87,7 @@ const Footer = () => {
                 <div className='container bg-[#0C0C0C] w-full '>
                     <div className='flex flex-row justify-center items-center py-5 border-t border-[#5E5E5E]'>
                         <h6 className='text-[#F4EBEB] text-sm font-light'>
-                            Copyright © 2024 Aria Global. All rights reserved
+                            Copyright © {new Date().getFullYear()} EyeWiz. All rights reserved
                         </h6>
                     </div>
                 </div>
