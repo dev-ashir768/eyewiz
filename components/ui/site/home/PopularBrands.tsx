@@ -32,7 +32,7 @@ const PopularBrands = () => {
                 </div>
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
             </div>
-            <div className='grid grid-cols-4 py-12 gap-3'>
+            <div className='grid lg:grid-cols-4 3:grid-cols-2 grid-cols-2 py-12 gap-3'>
                 {
                     brandLogos.map((item, index) => (
                         <div key={index} className='relative h-[120PX] bg-[#9F9F9F] rounded-xl'>
