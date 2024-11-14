@@ -58,8 +58,8 @@ const Footer = () => {
                                     </h6>
                                 </div>
                                 <div className='flex flex-col gap-4'>
-                                    <h6 className='text-[#9F9F9F] text-sm font-semibold uppercase'>Info@eyewiz.co.uk</h6>
-                                    <h6 className='text-[#9F9F9F] text-sm font-semibold uppercase'>KODAK Lens Vision Centre Forest Gate</h6>
+                                    <h6 className='text-[#9F9F9F] text-sm font-semibold uppercase'>info@eyewiz.co.uk</h6>
+                                    <h6 className='text-[#9F9F9F] text-sm font-semibold uppercase'>94 woodgrange road london, e7 oen</h6>
                                     <h6 className='text-[#9F9F9F] text-sm font-semibold uppercase'>020 8534 5170</h6>
                                 </div>
                             </div>

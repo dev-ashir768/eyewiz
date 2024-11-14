@@ -6,6 +6,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from 'next/image';
 
+const lenses = [
+    { modelImg: "stellestModel.avif", brandLogo: "stellest.webp", title: "A game-changing innovation in myopia control" },
+    { modelImg: "eyezenModel.avif", brandLogo: "eyezen.webp", title: "The new generation of single vision lenses" },
+    { modelImg: "variluxModel.webp", brandLogo: "varilux.webp", title: "Mastering sharpness instantly" },
+    { modelImg: "blueUVFilterSystemModel.avif", brandLogo: "blueUVFilterSystem.webp", title: "Advanced filtration technology" },
+    { modelImg: "xperioModel.avif", brandLogo: "xperio.webp", title: "Goes beyond protection" },
+    { modelImg: "transitionsModel.avif", brandLogo: "transitions.webp", title: "Light intelligent technology" },
+    { modelImg: "crizalModel.avif", brandLogo: "crizal.webp", title: "Your lenses invisible shield" },
+]
+
 const Lenses = () => {
     return (
         <section id='lenses' className='container py-16 bg-no-repeat bg-contain bg-bottom bg-fixed' style={{ backgroundImage: "url('/images/midNight.png')" }}>
@@ -32,52 +42,29 @@ const Lenses = () => {
                     breakpoints={{
                         375: { slidesPerView: 1 },
                         576: { slidesPerView: 2 },
-                        768: { slidesPerView: 3 },
+                        768: { slidesPerView: 2 },
                         992: { slidesPerView: 3 },
                         1200: { slidesPerView: 4 },
                         1400: { slidesPerView: 4 },
                     }}
                 >
-                    <SwiperSlide>
-                        <div className='relative h-[200px]'>
-                            <Image src="/images/varilux.png" alt="varilux" fill />
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase">varilux</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[200px]'>
-                            <Image src="/images/xcel.svg" alt="xcel" fill />
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase">X-Cel</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[200px]'>
-                            <Image src="/images/seiko.svg" alt="xcel" fill />
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase">seiko</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[200px]'>
-                            <Image src="/images/kodak.svg" alt="kodak" fill />
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase">kodak</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[200px]'>
-                            <Image src="/images/seiko.svg" alt="xcel" fill />
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase">seiko</h1>
-                        </div>
-                    </SwiperSlide>
+                    {
+                        lenses.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <div className='relative h-[260px] rounded-2xl overflow-hidden mb-6' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
+                                    <Image src={`/images/${item.modelImg}`} alt={item.modelImg} className='object-cover' fill />
+                                </div>
+                                <div>
+                                    <div className='relative h-[50px] w-[150px] mb-3'>
+                                        <Image src={`/images/${item.brandLogo}`} alt={item.brandLogo} fill />
+                                    </div>
+                                    <div>
+                                        <h1 className=" text-[#9F9F9F] xl:text-xl lg:text-lg md:text-xl sm:text-lg text-lg tracking-wide uppercase line-clamp-3">{item.title}</h1>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))
+                    }
                 </Swiper>
             </div>
         </section>

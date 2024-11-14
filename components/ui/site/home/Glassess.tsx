@@ -7,26 +7,27 @@ import "swiper/css/pagination";
 import Image from 'next/image';
 
 const glasses = [
+    { brandName: "Screen Glasses", imgHref: "glassesOne.jpg" },
+    { brandName: "Screen Glasses", imgHref: "glassesTwo.jpg" },
+    { brandName: "Screen Glasses", imgHref: "glassesThree.jpg" },
+    { brandName: "Screen Glasses", imgHref: "glassesFour.jpg" },
+    { brandName: "Screen Glasses", imgHref: "glassesFive.jpg" },
+    { brandName: "Screen Glasses", imgHref: "glassesSix.jpg" },
+    { brandName: "Screen Glasses", imgHref: "glassesSeven.jpg" },
+    { brandName: "Screen Glasses", imgHref: "glassesEight.jpg" },
+    { brandName: "Screen Glasses", imgHref: "glassesNine.jpg" },
+    { brandName: "Screen Glasses", imgHref: "glassesTen.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesEleven.jpg" },
-    { brandName: "Screen Glasses", imgHref: "glassesOne.webp" },
     { brandName: "Screen Glasses", imgHref: "glassesTwelve.jpg" },
-    { brandName: "Screen Glasses", imgHref: "glassesTwo.webp" },
     { brandName: "Screen Glasses", imgHref: "glassesThirteen.jpg" },
-    { brandName: "Screen Glasses", imgHref: "glassesThree.webp" },
     { brandName: "Screen Glasses", imgHref: "glassesFourteen.jpg" },
-    { brandName: "Screen Glasses", imgHref: "glassesFour.webp" },
     { brandName: "Screen Glasses", imgHref: "glassesFifteen.jpg" },
-    { brandName: "Screen Glasses", imgHref: "glassesFive.webp" },
-    { brandName: "Screen Glasses", imgHref: "glassesSeventeen.jpg" },
-    { brandName: "Screen Glasses", imgHref: "glassesSix.webp" },
-    { brandName: "Screen Glasses", imgHref: "glassesEighteeb.jpg" },
-    { brandName: "Screen Glasses", imgHref: "glassesSeven.webp" },
     { brandName: "Screen Glasses", imgHref: "glassesSixteen.jpg" },
-    { brandName: "Screen Glasses", imgHref: "glassesEight.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesSeventeen.jpg" },
+    { brandName: "Screen Glasses", imgHref: "glassesEighteen.jpg" },
     { brandName: "Screen Glasses", imgHref: "glassesNineteen.jpg" },
-    { brandName: "Screen Glasses", imgHref: "glassesNine.webp" },
     { brandName: "Screen Glasses", imgHref: "glassesTwenty.jpg" },
-    { brandName: "Screen Glasses", imgHref: "glassesTen.webp" },
+    { brandName: "Screen Glasses", imgHref: "glassesTwentyOne.jpg" },
 ]
 
 const Glassess = () => {
@@ -55,140 +56,24 @@ const Glassess = () => {
                     breakpoints={{
                         375: { slidesPerView: 1 },
                         576: { slidesPerView: 2 },
-                        768: { slidesPerView: 3 },
+                        768: { slidesPerView: 2 },
                         992: { slidesPerView: 3 },
-                        1200: { slidesPerView: 4 },
-                        1400: { slidesPerView: 4 },
+                        1200: { slidesPerView: 3 },
+                        1400: { slidesPerView: 3 },
                     }}
                 >
                     {
                         glasses.map((item, index) => (
                             <SwiperSlide key={index}>
-                                <div className='relative h-[230px] mb-0 rounded-3xl overflow-hidden' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                                    <div className='absolute inset-0'>
-                                        <Image src={`/images/${item.imgHref}`} alt={item.brandName} fill className='object-cover' />
-                                    </div>
+                                <div className='relative h-[280px] rounded-2xl overflow-hidden mb-6' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
+                                    <Image src={`/images/${item.imgHref}`} alt={item.brandName} className='object-cover' fill />
                                 </div>
-                                {/* <div>
-                                    <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase line-clamp-2">{item.brandName}</h1>
-                                </div> */}
                             </SwiperSlide>
                         ))
                     }
-                    {/* <SwiperSlide>
-                        <div className='relative h-[230px] mb-6 rounded-3xl overflow-hidden' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                            <div className='absolute inset-0'>
-                                <Image src="/images/menOne.jpg" alt="menOne" fill className='object-cover' />
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">premium glasses</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[230px] mb-6 rounded-3xl overflow-hidden' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                            <div className='absolute inset-0'>
-                                <Image src="/images/menTwo.jpg" alt="menTwo" fill className='object-cover' />
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">metal glasses</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[230px] mb-6 rounded-3xl overflow-hidden' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                            <div className='absolute inset-0'>
-                                <Image src="/images/menThree.jpg" alt="menThree" fill className='object-cover' />
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">premium glasses</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[230px] mb-6 rounded-3xl overflow-hidden' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                            <div className='absolute inset-0'>
-                                <Image src="/images/menOne.jpg" alt="menOne" fill className='object-cover' />
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">premium glasses</h1>
-                        </div>
-                    </SwiperSlide> */}
+
                 </Swiper>
             </div>
-            {/* <div className='pt-12'>
-                <Swiper
-                    keyboard={{ enabled: true }}
-                    spaceBetween={30}
-                    slidesPerView={1}
-                    loop={true}
-                    modules={[Keyboard, Autoplay]}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                    breakpoints={{
-                        375: { slidesPerView: 1 },
-                        576: { slidesPerView: 2 },
-                        768: { slidesPerView: 3 },
-                        992: { slidesPerView: 3 },
-                        1200: { slidesPerView: 4 },
-                        1400: { slidesPerView: 4 },
-                    }}
-                >
-                    <SwiperSlide>
-                        <div className='relative h-[230px] mb-6 rounded-3xl overflow-hidden' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                            <div className='absolute inset-0'>
-                                <Image src="/images/ladiesFour.jpg" alt="ladiesFour" fill className='object-cover' />
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">metal glasses</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[230px] mb-6 rounded-3xl overflow-hidden' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                            <div className='absolute inset-0'>
-                                <Image src="/images/ladiesOne.jpg" alt="ladiesOne" fill className='object-cover' />
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">premium glasses</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[230px] mb-6 rounded-3xl overflow-hidden' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                            <div className='absolute inset-0'>
-                                <Image src="/images/ladiesTwo.jpg" alt="ladiesTwo" fill className='object-cover' />
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">metal glasses</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[230px] mb-6 rounded-3xl overflow-hidden' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                            <div className='absolute inset-0'>
-                                <Image src="/images/menThree.jpg" alt="menThree" fill className='object-cover' />
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">premium glasses</h1>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='relative h-[230px] mb-6 rounded-3xl overflow-hidden' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                            <div className='absolute inset-0'>
-                                <Image src="/images/ladiesThree.jpg" alt="ladiesThree" fill className='object-cover' />
-                            </div>
-                        </div>
-                        <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">premium glasses</h1>
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
-            </div> */}
         </section>
     )
 }
