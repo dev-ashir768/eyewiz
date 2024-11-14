@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const WeOffer = () => {
     return (
-        <section id='about_us' className='container py-16 bg-no-repeat bg-contain bg-bottom bg-fixed' style={{ backgroundImage: "url('/images/midNight.png')" }}>
+        <section id='about_us' className='container sm:py-16 py-12 bg-no-repeat bg-contain bg-bottom bg-fixed' style={{ backgroundImage: "url('/images/midNight.png')" }}>
             <div className="flex items-center justify-center">
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
                 <div className="flex items-center text-[#DBB42C] xxl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase text-center">
@@ -40,7 +40,7 @@ const WeOffer = () => {
                     }}
                 >
                     <SwiperSlide>
-                        <div className='relative h-[150px] rounded-3xl overflow-hidden mb-6'>
+                        <div className='relative h-[180px] rounded-3xl overflow-hidden mb-6'>
                             <Image src="/images/treatmentOne.jpg" alt="treatmentOne" fill className='object-cover' />
                         </div>
                         <div>
@@ -48,7 +48,7 @@ const WeOffer = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='relative h-[150px] rounded-3xl overflow-hidden mb-6'>
+                        <div className='relative h-[180px] rounded-3xl overflow-hidden mb-6'>
                             <Image src="/images/treatmentTwo.jpg" alt="treatmentTwo" fill className='object-cover' />
                         </div>
                         <div>
@@ -56,7 +56,7 @@ const WeOffer = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='relative h-[150px] rounded-3xl overflow-hidden mb-6'>
+                        <div className='relative h-[180px] rounded-3xl overflow-hidden mb-6'>
                             <Image src="/images/treatmentThree.jpg" alt="treatmentThree" fill className='object-cover' />
                         </div>
                         <div>
@@ -64,7 +64,7 @@ const WeOffer = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='relative h-[150px] rounded-3xl overflow-hidden mb-6'>
+                        <div className='relative h-[180px] rounded-3xl overflow-hidden mb-6'>
                             <Image src="/images/treatmentFour.jpg" alt="treatmentFour" fill className='object-cover' />
                         </div>
                         <div>

@@ -42,7 +42,7 @@ const links = [
 
 const Treatment = () => {
     return (
-        <section id='treatment' className='container pb-16'>
+        <section id='treatment' className='container sm:pb-16 pb-12'>
             <div className="flex items-center justify-center">
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
                 <div className="flex items-center text-[#DBB42C] xxl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase text-center">
@@ -52,7 +52,7 @@ const Treatment = () => {
                 </div>
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
             </div>
-            <div className='max-w-[950px] mx-auto pt-16'>
+            <div className='max-w-[950px] mx-auto sm:pt-16 pt-12'>
                 <Accordion type="single" collapsible className="w-full space-y-5">
                     {links.map((item, index) => (
                         <AccordionItem

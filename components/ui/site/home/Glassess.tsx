@@ -32,7 +32,7 @@ const glasses = [
 
 const Glassess = () => {
     return (
-        <section id='eye-glasses' className='container pb-16' >
+        <section id='eye-glasses' className='container sm:pb-16 pb-12' >
             <div className="flex items-center justify-center">
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
                 <div className="flex items-center text-[#DBB42C] xxl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase text-center">

@@ -37,7 +37,7 @@ const Footer = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className='w-full flex md:flex-row flex-col xxl:gap-28 justify-between gap-10'>
+                        <div className='w-full flex md:flex-row flex-col xxl:gap-24 justify-between gap-10'>
                             <div className='max-w-[300px]'>
                                 <div className='md:mb-8 mb-4'>
                                     <h6 className='text-[#9F9F9F] text-lg font-semibold uppercase'>

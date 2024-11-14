@@ -32,7 +32,7 @@ const PopularBrands = () => {
                 </div>
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
             </div>
-            <div className='grid lg:grid-cols-4 3:grid-cols-2 grid-cols-2 py-12 gap-3'>
+            <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 py-12 gap-3'>
                 {
                     brandLogos.map((item, index) => (
                         <div key={index} className='relative h-[120PX] bg-[#9F9F9F] rounded-xl'>
@@ -40,49 +40,34 @@ const PopularBrands = () => {
                         </div>
                     ))
                 }
-                {/* <div className='relative h-[75PX]'>
-                    <Image src="/images/hugoBoss.svg" alt="hugoBoss" fill />
-                </div>
-                <div className='relative h-[75PX]'>
-                    <Image src="/images/rayBan.svg" alt="rayBan" fill />
-                </div>
-                <div className='relative h-[75PX]'>
-                    <Image src="/images/gucci.svg" alt="gucci" fill />
-                </div>
-                <div className='relative h-[75PX]'>
-                    <Image src="/images/tomford.svg" alt="tomford" fill />
-                </div>
-                <div className='relative h-[75PX]'>
-                    <Image src="/images/D&G.svg" alt="D&G" fill />
-                </div> */}
             </div>
-            {/* <div className='space-y-12'>
-                <div className='bg-[#342D21] rounded-2xl sm:pl-8 pl-4 lg:pr-0 sm:pr-8 pr-4 sm:py-8 py-4 lg:h-[350px] flex lg:flex-row flex-col items-center lg:gap-0 sm:gap-12 gap-8' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                    <div className='xl:w-[65%] lg:w-[60%] w-full lg:h-full h-[200px] relative rounded-xl overflow-hidden'>
-                        <Image src="/images/glassesOne.svg" className='object-cover' alt="glassesOne" fill />
-                    </div>
-                    <div className='xl:w-[35%] lg:w-[40%] w-full relative flex flex-col justify-center items-center lg:px-8'>
-                        <div className='relative w-[80px] h-[75px] flex-shrink-0 mb-3'>
-                            <Image src="/images/mk.svg" alt="mk" fill />
+                {/* <div className='space-y-12'>
+                    <div className='bg-[#342D21] rounded-2xl sm:pl-8 pl-4 lg:pr-0 sm:pr-8 pr-4 sm:py-8 py-4 lg:h-[350px] flex lg:flex-row flex-col items-center lg:gap-0 sm:gap-12 gap-8' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
+                        <div className='xl:w-[65%] lg:w-[60%] w-full lg:h-full h-[200px] relative rounded-xl overflow-hidden'>
+                            <Image src="/images/glassesOne.svg" className='object-cover' alt="glassesOne" fill />
                         </div>
-                        <h1 className='text-[#DBB42C] text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase mb-3'>michael kors</h1>
-                        <h1 className="md:max-w-[520px] max-w-[480px] text-[#9F9F9F] text-base text-center uppercase mb-3">Silhouette is one of the very few major European prescription glasses frame makers that makes</h1>
+                        <div className='xl:w-[35%] lg:w-[40%] w-full relative flex flex-col justify-center items-center lg:px-8'>
+                            <div className='relative w-[80px] h-[75px] flex-shrink-0 mb-3'>
+                                <Image src="/images/mk.svg" alt="mk" fill />
+                            </div>
+                            <h1 className='text-[#DBB42C] text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase mb-3'>michael kors</h1>
+                            <h1 className="md:max-w-[520px] max-w-[480px] text-[#9F9F9F] text-base text-center uppercase mb-3">Silhouette is one of the very few major European prescription glasses frame makers that makes</h1>
+                        </div>
                     </div>
-                </div>
 
-                <div className='bg-[#342D21] rounded-2xl sm:pl-8 pl-4 lg:pr-0 sm:pr-8 pr-4 sm:py-8 py-4 lg:h-[350px] flex lg:flex-row flex-col items-center lg:gap-0 sm:gap-12 gap-8' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
-                    <div className='xl:w-[65%] lg:w-[60%] w-full lg:h-full h-[200px] relative rounded-xl overflow-hidden'>
-                        <Image src="/images/glassesTwo.svg" className='object-cover' alt="glassesTwo" fill />
-                    </div>
-                    <div className='xl:w-[35%] lg:w-[40%] w-full relative flex flex-col justify-center items-center lg:px-8'>
-                        <div className='relative w-[80px] h-[75px] flex-shrink-0 mb-3'>
-                            <Image src="/images/versace.svg" alt="versace" fill />
+                    <div className='bg-[#342D21] rounded-2xl sm:pl-8 pl-4 lg:pr-0 sm:pr-8 pr-4 sm:py-8 py-4 lg:h-[350px] flex lg:flex-row flex-col items-center lg:gap-0 sm:gap-12 gap-8' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
+                        <div className='xl:w-[65%] lg:w-[60%] w-full lg:h-full h-[200px] relative rounded-xl overflow-hidden'>
+                            <Image src="/images/glassesTwo.svg" className='object-cover' alt="glassesTwo" fill />
                         </div>
-                        <h1 className='text-[#DBB42C] text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase mb-3'>Versace</h1>
-                        <h1 className="md:max-w-[520px] max-w-[480px] text-[#9F9F9F] text-base text-center uppercase mb-3">versace frames represent a signature series of prescription glasses, created by a heritage brand</h1>
+                        <div className='xl:w-[35%] lg:w-[40%] w-full relative flex flex-col justify-center items-center lg:px-8'>
+                            <div className='relative w-[80px] h-[75px] flex-shrink-0 mb-3'>
+                                <Image src="/images/versace.svg" alt="versace" fill />
+                            </div>
+                            <h1 className='text-[#DBB42C] text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase mb-3'>Versace</h1>
+                            <h1 className="md:max-w-[520px] max-w-[480px] text-[#9F9F9F] text-base text-center uppercase mb-3">versace frames represent a signature series of prescription glasses, created by a heritage brand</h1>
+                        </div>
                     </div>
-                </div>
-            </div> */}
+                </div> */}
         </section>
     )
 }

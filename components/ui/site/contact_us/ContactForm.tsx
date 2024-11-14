@@ -56,7 +56,7 @@ const ContactForm = () => {
 
 
     return (
-        <section className='container bg-[#10141B] py-16 bg-no-repeat bg-contain bg-bottom bg-fixed' style={{ backgroundImage: "url('/images/midNight.png')" }}>
+        <section className='container bg-[#10141B] sm:py-16 py-12 bg-no-repeat bg-contain bg-bottom bg-fixed' style={{ backgroundImage: "url('/images/midNight.png')" }}>
             <div className="flex items-center justify-center">
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
                 <div className="flex items-center text-[#DBB42C] xxl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase">
