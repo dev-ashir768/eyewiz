@@ -1,6 +1,25 @@
 import Image from 'next/image'
 import React from 'react'
 
+const brandLogos = [
+    { brandName: "rayBan", logoHref: "rayBan.avif" },
+    { brandName: "versace", logoHref: "versace.avif" },
+    { brandName: "vogue", logoHref: "vogue.avif" },
+    { brandName: "prada", logoHref: "prada.avif" },
+    { brandName: "okaley", logoHref: "okaley.webp" },
+    { brandName: "arnette", logoHref: "arnette.avif" },
+    { brandName: "horse", logoHref: "horse.webp" },
+    { brandName: "armani", logoHref: "armani.avif" },
+    { brandName: "jimmy", logoHref: "jimmy.avif" },
+    { brandName: "michale", logoHref: "michale.avif" },
+    { brandName: "polo", logoHref: "polo.webp" },
+    { brandName: "ralph", logoHref: "ralph.avif" },
+    { brandName: "native", logoHref: "native.webp" },
+    { brandName: "molsion", logoHref: "molsion.avif" },
+    { brandName: "chaps", logoHref: "chaps.webp" },
+    { brandName: "alain", logoHref: "alain.webp" }
+]
+
 const PopularBrands = () => {
     return (
         <section className='container pb-16'>
@@ -13,11 +32,15 @@ const PopularBrands = () => {
                 </div>
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
             </div>
-            <div className='grid md:grid-cols-6 grid-cols-3 py-12 gap-3'>
-                <div className='relative h-[75PX]'>
-                    <Image src="/images/prada.svg" alt="prada" fill />
-                </div>
-                <div className='relative h-[75PX]'>
+            <div className='grid grid-cols-4 py-12 gap-3'>
+                {
+                    brandLogos.map((item, index) => (
+                        <div key={index} className='relative h-[120PX] bg-[#9F9F9F] rounded-xl'>
+                            <Image src={`/images/${item.logoHref}`} alt={item.brandName} className='object-contain p-5' fill />
+                        </div>
+                    ))
+                }
+                {/* <div className='relative h-[75PX]'>
                     <Image src="/images/hugoBoss.svg" alt="hugoBoss" fill />
                 </div>
                 <div className='relative h-[75PX]'>
@@ -31,7 +54,7 @@ const PopularBrands = () => {
                 </div>
                 <div className='relative h-[75PX]'>
                     <Image src="/images/D&G.svg" alt="D&G" fill />
-                </div>
+                </div> */}
             </div>
             {/* <div className='space-y-12'>
                 <div className='bg-[#342D21] rounded-2xl sm:pl-8 pl-4 lg:pr-0 sm:pr-8 pr-4 sm:py-8 py-4 lg:h-[350px] flex lg:flex-row flex-col items-center lg:gap-0 sm:gap-12 gap-8' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>

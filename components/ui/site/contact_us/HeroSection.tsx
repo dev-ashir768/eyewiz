@@ -9,8 +9,9 @@ const HeroSection = () => {
                 <h1 className='md:max-w-[520px] max-w-[480px] text-[#DBB42C] lg:text-3xl md:text-4xl sm:text-3xl text-2xl tracking-wide uppercase mb-3'>
                     📝 We&apos;re here to help with all your eyewear needs!
                 </h1>
-                <p className='text-[#9F9F9F] xxl:text-lg sm:text-base text-sm'>💌 Email us at: email@example.com</p>
-                <p className='text-[#9F9F9F] xxl:text-lg sm:text-base text-sm'>📱 Call us at: 0316-1065268</p>
+                <p className='text-[#9F9F9F] xxl:text-lg sm:text-base text-sm'>💌 Email us at: info@eyewiz.co.uk</p>
+                <p className='text-[#9F9F9F] xxl:text-lg sm:text-base text-sm'>📍 Visit us at: 94 woodgrange road london, e7 oen</p>
+                <p className='text-[#9F9F9F] xxl:text-lg sm:text-base text-sm'>📱 Call us at: 020 8534 5170</p>
             </div>
             <div className='lg:w-[49%] w-full'>
                 <div className='flex lg:justify-end justify-center items-center w-full'>
