@@ -44,7 +44,7 @@ const WeOffer = () => {
                             <Image src="/images/treatmentOne.jpg" alt="treatmentOne" fill className='object-cover' />
                         </div>
                         <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">Optimize Your Vision</h1>
+                            <h1 className="text-[#9F9F9F] xl:text-xl lg:text-lg md:text-xl sm:text-lg text-lg tracking-wide uppercase">comprehensive eye examination </h1>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -52,7 +52,7 @@ const WeOffer = () => {
                             <Image src="/images/treatmentTwo.jpg" alt="treatmentTwo" fill className='object-cover' />
                         </div>
                         <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">Enhanced Lens Solutions</h1>
+                            <h1 className="text-[#9F9F9F] xl:text-xl lg:text-lg md:text-xl sm:text-lg text-lg tracking-wide uppercase">contact lens fittings</h1>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -60,7 +60,7 @@ const WeOffer = () => {
                             <Image src="/images/treatmentThree.jpg" alt="treatmentThree" fill className='object-cover' />
                         </div>
                         <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">Safeguard Your Sight</h1>
+                            <h1 className="text-[#9F9F9F] xl:text-xl lg:text-lg md:text-xl sm:text-lg text-lg tracking-wide uppercase">Dry Eye Management</h1>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -68,7 +68,7 @@ const WeOffer = () => {
                             <Image src="/images/treatmentFour.jpg" alt="treatmentFour" fill className='object-cover' />
                         </div>
                         <div>
-                            <h1 className="text-center text-[#9F9F9F] text-2xl tracking-wide uppercase">Protect and Perfect View</h1>
+                            <h1 className=" text-[#9F9F9F] xl:text-xl lg:text-lg md:text-xl sm:text-lg text-lg tracking-wide uppercase">Minor Eye Conditions Services</h1>
                         </div>
                     </SwiperSlide>
                 </Swiper>

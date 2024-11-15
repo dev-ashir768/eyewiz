@@ -1,17 +1,17 @@
 import React from 'react'
 import { Metadata } from "next";
-import AboutContainer from '@/components/ui/site/about_us/AboutContainer';
+import TreatmentContainer from '@/components/ui/site/treatment/TreatmentContainer';
 export const metadata: Metadata = {
-    title: "ABOUT US | EYE WIZ",
+    title: "TREATMENT | EYE WIZ",
     description: "The optical wizards",
-    metadataBase: new URL("https://localhost:3000/about_us"),
+    metadataBase: new URL("https://localhost:3000/treatment"),
 
 };
 
 const page = () => {
     return (
         <>
-            <AboutContainer />
+            <TreatmentContainer />
         </>
     )
 }

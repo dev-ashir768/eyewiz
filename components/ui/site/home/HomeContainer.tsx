@@ -1,18 +1,22 @@
-import EyeWizCarousel from './EyeWizCarousel'
+import AboutUs from './AboutUs'
+import CTA from './CTA'
+// import EyeWizCarousel from './EyeWizCarousel'
 import Glassess from './Glassess'
 import HeroSection from './HeroSection'
 import Lenses from './Lenses'
 import PopularBrands from './PopularBrands'
-import Treatment from './Treatment'
 import WeOffer from './WeOffer'
+import WhyChooseUs from './WhyChooseUs'
 
 const HomeContainer = () => {
     return (
         <>
             <HeroSection />
-            <EyeWizCarousel />
+            {/* <EyeWizCarousel /> */}
+            <AboutUs />
+            <WhyChooseUs />
+            <CTA />
             <WeOffer />
-            <Treatment />
             <Glassess />
             <Lenses />
             <PopularBrands />

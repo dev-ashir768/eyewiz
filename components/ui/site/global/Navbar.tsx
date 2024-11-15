@@ -12,8 +12,8 @@ export const navlinks = [
     { label: "home", href: "/" },
     { label: "lenses", href: "/#lenses" },
     { label: "eye glasses", href: "/#eye-glasses" },
-    { label: "treatment", href: "/#treatment" },
-    { label: "about us", href: "/about_us" },
+    { label: "treatment", href: "/treatment" },
+    { label: "about us", href: "/#about_us" },
     { label: "contact us", href: "/contact_us" },
 ]
 

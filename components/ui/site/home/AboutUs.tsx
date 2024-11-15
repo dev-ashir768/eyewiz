@@ -3,7 +3,7 @@ import React from 'react'
 
 const AboutUs = () => {
     return (
-        <section className='container sm:py-16 py-12'>
+        <section id="about_us" className='container sm:py-16 py-12 bg-fixed bg-bottom bg-no-repeat' style={{ backgroundImage: "url('/images/midNight.png')" }}>
             <div className="flex items-center justify-center">
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
                 <div className="flex items-center text-[#DBB42C] xxl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase text-center">
@@ -21,7 +21,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className='lg:w-1/2 w-full'>
-                    <Image src="/images/aboutImg.jpg" alt="aboutImg" className='mx-auto rounded-xl' width={300} height={300} />
+                    <Image src="/images/aboutImg.jpg" alt="aboutImg" className='mx-auto rounded-xl overflow-hidden' width={300} height={300} />
                 </div>
             </div>
         </section>

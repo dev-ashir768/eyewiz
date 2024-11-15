@@ -2,23 +2,24 @@ import Image from 'next/image'
 import React from 'react'
 
 const brandLogos = [
-    { brandName: "rayBan", logoHref: "rayBan.avif" },
-    { brandName: "versace", logoHref: "versace.avif" },
-    { brandName: "vogue", logoHref: "vogue.avif" },
-    { brandName: "prada", logoHref: "prada.avif" },
-    { brandName: "okaley", logoHref: "okaley.webp" },
-    { brandName: "arnette", logoHref: "arnette.avif" },
-    { brandName: "horse", logoHref: "horse.webp" },
+    { brandName: "gucci", logoHref: "gucci.avif" },
     { brandName: "armani", logoHref: "armani.avif" },
     { brandName: "jimmy", logoHref: "jimmy.avif" },
     { brandName: "michale", logoHref: "michale.avif" },
+    { brandName: "tomford", logoHref: "tomford.png" },  
+    { brandName: "prada", logoHref: "prada.avif" },
+    { brandName: "persol", logoHref: "persol.avif" },
     { brandName: "polo", logoHref: "polo.webp" },
-    { brandName: "ralph", logoHref: "ralph.avif" },
-    { brandName: "native", logoHref: "native.webp" },
-    { brandName: "molsion", logoHref: "molsion.avif" },
-    { brandName: "chaps", logoHref: "chaps.webp" },
-    { brandName: "alain", logoHref: "alain.webp" }
+    { brandName: "oliverPeoples", logoHref: "oliverPeoples.avif" },
+    { brandName: "okaley", logoHref: "okaley.webp" },
+    { brandName: "rayBan", logoHref: "rayBan.avif" },
+    { brandName: "tiffany&Co", logoHref: "tiffany&Co.webp" },
+    { brandName: "versace", logoHref: "versace.avif" },
+    { brandName: "dolic&Gabban", logoHref: "dolic&Gabban.webp" },
+    { brandName: "chanel", logoHref: "chanel.avif" },
+    { brandName: "burberry", logoHref: "burberry.avif" },
 ]
+
 
 const PopularBrands = () => {
     return (
@@ -32,7 +33,7 @@ const PopularBrands = () => {
                 </div>
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
             </div>
-            <div className='grid lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 py-12 gap-3'>
+            <div className='grid lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-2 py-12 gap-4'>
                 {
                     brandLogos.map((item, index) => (
                         <div key={index} className='relative h-[120PX] bg-[#9F9F9F] rounded-xl'>
@@ -41,7 +42,7 @@ const PopularBrands = () => {
                     ))
                 }
             </div>
-                {/* <div className='space-y-12'>
+            {/* <div className='space-y-12'>
                     <div className='bg-[#342D21] rounded-2xl sm:pl-8 pl-4 lg:pr-0 sm:pr-8 pr-4 sm:py-8 py-4 lg:h-[350px] flex lg:flex-row flex-col items-center lg:gap-0 sm:gap-12 gap-8' style={{ boxShadow: 'rgba(219, 180, 44, 0.19) 0px 10px 20px, rgba(219, 180, 44, 0.23) 0px 6px 6px' }}>
                         <div className='xl:w-[65%] lg:w-[60%] w-full lg:h-full h-[200px] relative rounded-xl overflow-hidden'>
                             <Image src="/images/glassesOne.svg" className='object-cover' alt="glassesOne" fill />

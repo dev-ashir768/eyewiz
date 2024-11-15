@@ -29,7 +29,7 @@ const links = [
         id: 4,
         question: "What will I be tested for?",
         answer:
-            "When you go for an eye examination, it’s not only your vision that will be assessed. Of course, your optician will assess any refractive error (your glasses prescription), but this is also an opportunity to look for things like amblyopia (lazy eye), eye alignment problems, and potentially sight-threatening diseases and disorders.\n\nOften, your optician will pick up on abnormalities far sooner than your GP or a specialist because they can detect possible problems by looking through your eyes at your blood vessels and other working parts. So perhaps eyes are not only the window to your soul but also to your body.",
+            "When you go for an eye examination, its not only your vision that will be assessed. Of course, your optician will assess any refractive error (your glasses prescription), but this is also an opportunity to look for things like amblyopia (lazy eye), eye alignment problems, and potentially sight-threatening diseases and disorders.\n\nOften, your optician will pick up on abnormalities far sooner than your GP or a specialist because they can detect possible problems by looking through your eyes at your blood vessels and other working parts. So perhaps eyes are not only the window to your soul but also to your body.",
     },
     {
         id: 5,
@@ -40,9 +40,9 @@ const links = [
 ];
 
 
-const Treatment = () => {
+const FAQs = () => {
     return (
-        <section id='treatment' className='container sm:pb-16 pb-12'>
+        <section className='container sm:py-16 py-12 bg-no-repeat bg-bottom bg-fixed' style={{ backgroundImage: "url('/images/midNight.png')" }}>
             <div className="flex items-center justify-center">
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
                 <div className="flex items-center text-[#DBB42C] xxl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl text-2xl font-[family-name:var(--font-playfair)] tracking-wide uppercase text-center">
@@ -74,4 +74,4 @@ const Treatment = () => {
     )
 }
 
-export default Treatment
+export default FAQs
