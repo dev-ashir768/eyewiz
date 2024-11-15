@@ -15,7 +15,7 @@ const AboutUs = () => {
             </div>
             <div className='flex lg:flex-row flex-col items-center justify-center sm:pt-16 pt-8 gap-10'>
                 <div className='lg:w-1/2 w-full'>
-                    <h1 className='text-[#9F9F9F] font-semibold xl:text-3xl lg:text-2xl sm:text-xl text-lg tracking-wide uppercase mb-5'>Your Vision, Our Passion</h1>
+                    <h1 className='text-[#9F9F9F] font-semibold xl:text-3xl lg:text-2xl sm:text-xl text-lg tracking-wide uppercase sm:mb-5 mb-2'>Your Vision, Our Passion</h1>
                     <div className='max-w-[500px]'>
                         <p className=" text-[#9F9F9F] xl:text-xl lg:text-lg md:text-xl sm:text-lg text-lg tracking-wide">At Eyewiz, we&apos;re not just opticians; we&apos;re a team of young, passionate individuals dedicated to providing exceptional eye care. With a combined experience of over 50 years, we&apos;ve honed our skills to deliver unparalleled service that goes beyond your expectations.</p>
                     </div>

@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <footer>
-                <div className='container py-20 bg-[#0C0C0C] bg-no-repeat bg-contain bg-bottom bg-fixed' style={{ backgroundImage: "url('/images/footerBG.svg')" }}>
+                <div className='container sm:py-20 py-14 bg-[#0C0C0C] bg-no-repeat bg-contain bg-bottom bg-fixed' style={{ backgroundImage: "url('/images/footerBG.svg')" }}>
                     <div className='flex lg:flex-row flex-col justify-between items-start lg:gap-20 gap-14'>
                         <div className='xl:max-w-[260px] lg:max-w-[215px] max-w-[300px]'>
                             <div className='md:mb-8 mb-4'>
