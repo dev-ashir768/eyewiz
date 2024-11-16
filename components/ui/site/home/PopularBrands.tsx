@@ -6,7 +6,7 @@ const brandLogos = [
     { brandName: "armani", logoHref: "armani.avif" },
     { brandName: "jimmy", logoHref: "jimmy.avif" },
     { brandName: "michale", logoHref: "michale.avif" },
-    { brandName: "tomford", logoHref: "tomford.png" },
+    { brandName: "tomford", logoHref: "tomford.png" },  
     { brandName: "prada", logoHref: "prada.avif" },
     { brandName: "persol", logoHref: "persol.avif" },
     { brandName: "polo", logoHref: "polo.webp" },
@@ -22,7 +22,7 @@ const brandLogos = [
 
 
 const PopularBrands = () => {
-    return ( 
+    return (
         <section className='container pb-16'>
             <div className="flex items-center justify-center">
                 <div className="lg:flex hidden flex-1 border-t border-[#DBB42C]"></div>
